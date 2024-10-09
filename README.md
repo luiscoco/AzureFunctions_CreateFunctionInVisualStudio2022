@@ -380,11 +380,11 @@ Now  press in the Publish botton
 
 Verify the Publish folder
 
+**IMPORTANT NOTE**: navigate **inside the Publish folder and select all the files with Ctrl+A**, then click on your mouse right button and create the ZIP file with Winrar or WinZip
+
 ![image](https://github.com/user-attachments/assets/de636ffa-c5bb-4703-813e-28f4fb214ef8)
 
 Create the ZIP file with Winrar
-
-**IMPORTANT NOTE**: navigate inside the Publish folder and select all the files with Ctrl+A, then click on your mouse right button and create the ZIP file with Winrar or WinZip
 
 ![image](https://github.com/user-attachments/assets/b1b56266-3b61-44f4-be29-e2bfa161ce9f)
 
