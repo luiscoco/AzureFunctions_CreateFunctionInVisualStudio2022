@@ -270,7 +270,7 @@ Select where you would like to deploy your Azure Function and press the Next but
 
 Select the Azure Service where to deploy your Azure Function
 
-![image](https://github.com/user-attachments/assets/5b681376-1964-4877-be94-74e02e257d5b)
+![image](https://github.com/user-attachments/assets/36882f79-6596-4485-9fad-fe196893ca43)
 
 Create a new Azure Function instance in case there was not created previously in Azure Portal or with Azure CLI
 
