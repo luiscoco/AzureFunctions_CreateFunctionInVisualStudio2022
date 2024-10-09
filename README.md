@@ -400,6 +400,37 @@ Now run the following command in AZURE CLI to deploy in Azure Portal
 az functionapp deployment source config-zip --resource-group myRG --name myfunctionforblazor --src "C:\14. Blazor LCE Youtube channel\FunctionApp1\Publish.zip"
 ```
 
+## 18. Publish your Azure Function with DotNET CLI
+
+Open your Azure Function solution source code folder
+
+![image](https://github.com/user-attachments/assets/42de3b68-ee2f-4c45-b2a8-b3f4c07205aa)
+
+Type **cmd** in the navigation bar to open the folder in a command prompt window
+
+![image](https://github.com/user-attachments/assets/b9f6f66b-14b6-4536-879c-9774dbb088bc)
+
+Then type the following command to publish your solution in a **Publish** folder
+
+```
+dotnet publish -c release -o ./Publish
+```
+
+![image](https://github.com/user-attachments/assets/233fdddf-a5dc-4f70-b09f-216ef9deda3e)
+
+Verify the Publish folder content
+
+![image](https://github.com/user-attachments/assets/b06f6d5a-a120-4020-b4b9-2dc35b92136c)
+
+![image](https://github.com/user-attachments/assets/5cc5cca3-85d5-4e00-8212-5c18b11ab8b6)
+
+For creating a ZIP file you have to select all the files inside the Publish folder and create the ZIP file
+
+![image](https://github.com/user-attachments/assets/0148bd76-8e19-4174-98c3-08fe512943ee)
+
+![image](https://github.com/user-attachments/assets/1265a31f-5084-4bf6-aae0-4a0e93d8043f)
+
+![image](https://github.com/user-attachments/assets/d3ca79c0-74bc-4ebf-bad5-3c34861ace88)
 
 
 
