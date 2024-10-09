@@ -1,4 +1,4 @@
-# How to create your first Azure Function with Visual Studio 2022 and .NET 9
+# How to create and deploy your first Azure Function with Visual Studio 2022 (.NET 9)
 
 ## 1. Download and install Visual Studio 2022 Community Edition (version 17.12)
 
