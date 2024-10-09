@@ -306,6 +306,8 @@ We create a new Resource Group where to place all the services related to my new
 
 ![image](https://github.com/user-attachments/assets/01dcb6ff-268a-4f5e-8644-0eb7f7f56f2f)
 
+Select the Azure Function created in the Azure Portal
+
 ![image](https://github.com/user-attachments/assets/833de611-00a4-4cc3-977f-417fd6df9168)
 
 After creating the publishing profile press the Publish button
