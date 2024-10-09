@@ -258,8 +258,6 @@ Click on the Azure Function Endpoint and see the result
 
 ## 15. How to deploy the Azure Function from Visual Studio 2022
 
-**IMPORTANT NOTE**:
-
 Right click on the Azure Function project name and the select the menu option **Publish...**
 
 ![image](https://github.com/user-attachments/assets/4961ebe3-21eb-4b7c-b61b-fcacca878366)
@@ -285,6 +283,25 @@ After creating the publishing profile press the Publish button
 ![image](https://github.com/user-attachments/assets/eeb90aa6-2e38-474f-adef-ac65b8dcff2e)
 
 ## 16. (OPTIONAL) You can create an Azure Function in Azure Portal and the deploy your Azure Function from Visual Studio 2022
+
+First create an Azure Function in Azure Portal 
+
+It is important to select the same .NET Runtime Framework version in Azure Portal as we used for creating the Azure Function in Visual Studio 2022 IDE
+
+![image](https://github.com/user-attachments/assets/7ba466cb-6d6d-4a70-8145-327caec39e69)
+
+We select the **Consumption** and press the Select button 
+
+![image](https://github.com/user-attachments/assets/b621aa09-a778-4dca-8e7b-8b2849f485e3)
+
+We create a new Resource Group where to place all the services related to my new Azure Function
+
+![image](https://github.com/user-attachments/assets/0147ea4a-704d-4b57-9a45-7bcb68d6bc8e)
+
+![image](https://github.com/user-attachments/assets/4ea06800-a213-4a96-a281-1ac565180de9)
+
+![image](https://github.com/user-attachments/assets/dbed164d-38b5-4caf-8567-0273cc99df31)
+
 
 ![image](https://github.com/user-attachments/assets/833de611-00a4-4cc3-977f-417fd6df9168)
 
