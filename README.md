@@ -280,9 +280,17 @@ Create a new Azure Function instance in case there was not created previously in
 
 After creating the publishing profile press the Publish button
 
-![image](https://github.com/user-attachments/assets/40e6918a-fd6a-4399-a4d9-e554862c854c)
+![image](https://github.com/user-attachments/assets/a4641fed-e870-47eb-b4e2-5a0e573b4ba0)
 
-![image](https://github.com/user-attachments/assets/eeb90aa6-2e38-474f-adef-ac65b8dcff2e)
+![image](https://github.com/user-attachments/assets/ebd85729-bb7a-46cc-bdac-e559943aba59)
+
+Now we verify the deployment in Azure Portal
+
+We press in the Function name **Function1**
+
+![image](https://github.com/user-attachments/assets/80208412-81d2-486e-854e-2b58bb32517d)
+
+
 
 ## 16. (OPTIONAL) You can create an Azure Function in Azure Portal and the deploy your Azure Function from Visual Studio 2022
 
@@ -312,9 +320,17 @@ Select the Azure Function created in the Azure Portal
 
 After creating the publishing profile press the Publish button
 
-![image](https://github.com/user-attachments/assets/40e6918a-fd6a-4399-a4d9-e554862c854c)
+![image](https://github.com/user-attachments/assets/4fa9e5ed-7a35-4de9-9923-14bf13bdba7a)
 
-![image](https://github.com/user-attachments/assets/dc6420f7-cfbf-4749-97ba-5bcc354eff17)
+![image](https://github.com/user-attachments/assets/f52475ca-402c-4e3d-a6f3-08077a5b4bd4)
+
+Now we verify the deployment in Azure Portal
+
+We press in the Function name **Function1**
+
+![image](https://github.com/user-attachments/assets/80208412-81d2-486e-854e-2b58bb32517d)
+
+
 
 ## 17. (OPTIONAL) You can create a ZIP from your Azure Function and then deploy from Azure CLI
 
