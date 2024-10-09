@@ -384,6 +384,8 @@ Verify the Publish folder
 
 Create the ZIP file with Winrar
 
+**IMPORTANT NOTE**: navigate inside the Publish folder and select all the files with Ctrl+A, then click on your mouse right button and create the ZIP file with Winrar or WinZip
+
 ![image](https://github.com/user-attachments/assets/b1b56266-3b61-44f4-be29-e2bfa161ce9f)
 
 See the ZIP file
@@ -393,7 +395,7 @@ See the ZIP file
 Now run the following command in AZURE CLI to deploy in Azure Portal
 
 ```
-C:\14. Blazor LCE Youtube channel\FunctionApp1>az functionapp deployment source config-zip --resource-group myRG --name myfunctionforblaozr --src Publish.zip
+az functionapp deployment source config-zip --resource-group myRG --name myfunctionforblazor --src "C:\14. Blazor LCE Youtube channel\FunctionApp1\Publish.zip"
 ```
 
 
