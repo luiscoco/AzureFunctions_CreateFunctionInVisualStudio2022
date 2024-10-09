@@ -354,8 +354,41 @@ See the Azure Function output
 
 ![image](https://github.com/user-attachments/assets/0aaaa6a7-a0b0-42a4-ac05-5e7392d3f589)
 
-## 17. (OPTIONAL) You can create a ZIP from your Azure Function and then deploy from Azure CLI
+## 17. (OPTIONAL) You can compress your Azure Function as a ZIP file and deploy it with Azure CLI commands
 
+We right click on the Auzre Function name and select Publish
+
+![image](https://github.com/user-attachments/assets/9026e267-4947-4cff-9c3e-e758ce5bbd84)
+
+Then we select the Folder option for publising and press the Next button
+
+![image](https://github.com/user-attachments/assets/a2b56f38-a9ad-4753-a7bd-8be28e2b8ff1)
+
+We search for the folder where to publish the Azure Function
+
+![image](https://github.com/user-attachments/assets/21f89ae6-5c69-47f2-8d43-6e659d496fed)
+
+And press in the Finish button
+
+![image](https://github.com/user-attachments/assets/5024a36d-e702-41c7-9c10-bfef80e23fa8)
+
+Now  press in the Publish botton
+
+![image](https://github.com/user-attachments/assets/1c58faed-be7a-4b33-984b-e19de56f3fcb)
+
+![image](https://github.com/user-attachments/assets/d29ab0db-90bb-4a79-a083-51c57144c576)
+
+Verify the Publish folder
+
+![image](https://github.com/user-attachments/assets/de636ffa-c5bb-4703-813e-28f4fb214ef8)
+
+Create the ZIP file with Winrar
+
+![image](https://github.com/user-attachments/assets/b1b56266-3b61-44f4-be29-e2bfa161ce9f)
+
+See the ZIP file
+
+![image](https://github.com/user-attachments/assets/f144f636-f218-4a1d-b56d-517f0e30df41)
 
 
 
