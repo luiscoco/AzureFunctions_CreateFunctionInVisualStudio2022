@@ -390,7 +390,11 @@ See the ZIP file
 
 ![image](https://github.com/user-attachments/assets/f144f636-f218-4a1d-b56d-517f0e30df41)
 
+Now run the following command in AZURE CLI to deploy in Azure Portal
 
+```
+C:\14. Blazor LCE Youtube channel\FunctionApp1>az functionapp deployment source config-zip --resource-group myRG --name myfunctionforblaozr --src Publish.zip
+```
 
 
 
