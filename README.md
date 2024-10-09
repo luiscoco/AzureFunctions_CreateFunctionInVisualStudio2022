@@ -276,6 +276,8 @@ Create a new Azure Function instance in case there was not created previously in
 
 ![image](https://github.com/user-attachments/assets/1258c45b-e512-4db9-b16d-ad48dc778dbb)
 
+![image](https://github.com/user-attachments/assets/6936460f-ea58-4c59-abb3-1f78c5aeacb1)
+
 ![image](https://github.com/user-attachments/assets/1c0de0ea-119b-4ee2-8a99-f80effd26214)
 
 After creating the publishing profile press the Publish button
