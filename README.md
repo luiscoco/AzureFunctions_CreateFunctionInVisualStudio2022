@@ -304,6 +304,7 @@ We create a new Resource Group where to place all the services related to my new
 
 ![image](https://github.com/user-attachments/assets/dbed164d-38b5-4caf-8567-0273cc99df31)
 
+![image](https://github.com/user-attachments/assets/01dcb6ff-268a-4f5e-8644-0eb7f7f56f2f)
 
 ![image](https://github.com/user-attachments/assets/833de611-00a4-4cc3-977f-417fd6df9168)
 
