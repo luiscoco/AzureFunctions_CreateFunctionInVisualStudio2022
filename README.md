@@ -290,7 +290,17 @@ We press in the Function name **Function1**
 
 ![image](https://github.com/user-attachments/assets/80208412-81d2-486e-854e-2b58bb32517d)
 
+Now press in the **Test/Run** button
 
+![image](https://github.com/user-attachments/assets/0d16e958-d268-43d8-ad9f-484681519bf0)
+
+And press in the **Run** button
+
+![image](https://github.com/user-attachments/assets/be86bc9f-b6e0-4da1-b898-cd959c7cc7cc)
+
+See the Azure Function output
+
+![image](https://github.com/user-attachments/assets/0aaaa6a7-a0b0-42a4-ac05-5e7392d3f589)
 
 ## 16. (OPTIONAL) You can create an Azure Function in Azure Portal and the deploy your Azure Function from Visual Studio 2022
 
@@ -330,7 +340,17 @@ We press in the Function name **Function1**
 
 ![image](https://github.com/user-attachments/assets/80208412-81d2-486e-854e-2b58bb32517d)
 
+Now press in the **Test/Run** button
 
+![image](https://github.com/user-attachments/assets/0d16e958-d268-43d8-ad9f-484681519bf0)
+
+And press in the **Run** button
+
+![image](https://github.com/user-attachments/assets/be86bc9f-b6e0-4da1-b898-cd959c7cc7cc)
+
+See the Azure Function output
+
+![image](https://github.com/user-attachments/assets/0aaaa6a7-a0b0-42a4-ac05-5e7392d3f589)
 
 ## 17. (OPTIONAL) You can create a ZIP from your Azure Function and then deploy from Azure CLI
 
