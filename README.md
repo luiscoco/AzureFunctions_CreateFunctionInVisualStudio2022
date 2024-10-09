@@ -87,11 +87,11 @@ The **[Function("Function1")]** attribute defines this method as an Azure Functi
 
 The method **Run** is the function's entry point. It accepts an HttpRequest object (triggered by either a **GET or POST HTTP request**), and it's decorated with the **[HttpTrigger]** attribute
 
-The AuthorizationLevel.Function specifies that the function requires a valid function key for access
+The **AuthorizationLevel.Function** specifies that the function requires a valid function key for access
 
-Logging and Response: Inside the Run method, the function logs a message using _logger.LogInformation
+**Logging and Response**: Inside the Run method, the function logs a message using **_logger.LogInformation**
 
-The method returns an OkObjectResult with a message "Welcome to Azure Functions!", which corresponds to an HTTP 200 OK response
+The method returns an **OkObjectResult** with a message "Welcome to Azure Functions!", which corresponds to an HTTP 200 OK response
 
 ## 12. Configure and register the Services in the middleware (Program.cs)
 
@@ -112,7 +112,29 @@ var host = new HostBuilder()
 host.Run();
 ```
 
+This code sets up and runs an Azure Functions application using the Azure Functions Worker SDK in a .NET 9 application
 
+It primarily focuses on configuring the application's host and setting up services such as **Application Insights** for telemetry and logging
+
+**Microsoft.Azure.Functions.Worker**: This provides functionality for building Azure Functions using the .NET Worker model, which allows for a decoupled, flexible environment outside of traditional ASP.NET Core
+
+**Microsoft.Extensions.DependencyInjection**: This allows for dependency injection, letting you register services that the application can use
+
+**Microsoft.Extensions.Hosting**: This namespace helps create and manage a host for the application, setting up the environment and services needed to run it
+
+The **HostBuilder** is used to configure and build the **host** for the Azure Functions application
+
+**.ConfigureFunctionsWebApplication()**: This method configures the application for Azure Functions, essentially setting it up to act as a Functions app
+
+**ConfigureServices**: Inside this method, **services are registered** to the application's dependency injection (DI) container
+
+**services.AddApplicationInsightsTelemetryWorkerService()**: This adds support for Application Insights telemetry, a monitoring tool that helps track and analyze application performance, exceptions, and logs
+
+**services.ConfigureFunctionsApplicationInsights()**: Configures Application Insights specifically for Azure Functions to capture function-specific telemetry
+
+**Build()**: After the host configuration is defined (including functions setup and telemetry services), the Build() method is called to **build the host**. This prepares the Azure Functions app for execution.
+
+**host.Run()**: This method **runs the Azure Functions application**, making it ready to respond to function triggers (like HTTP requests, timer triggers, etc.).
 
 ## 13. 
 
