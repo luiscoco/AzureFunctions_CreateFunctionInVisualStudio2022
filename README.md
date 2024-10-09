@@ -188,8 +188,38 @@ In this case, it defines two services:
 
 This file defines external services (like Azure Application Insights and Azure Storage) that your Azure Function depends on, helping manage and configure those dependencies
 
-### 13.4 
+### 13.4. host.json 
 
+The host.json file is used to configure the behavior of the Azure Functions runtime
+
+```json
+{
+  "version": "2.0",
+  "logging": {
+      "applicationInsights": {
+          "samplingSettings": {
+              "isEnabled": true,
+              "excludedTypes": "Request"
+          },
+          "enableLiveMetricsFilters": true
+      }
+  }
+}
+```
+
+This file **configures logging and telemetry** for Azure Functions, particularly how data is handled by **Application Insights** (e.g., sampling to control the amount of telemetry data)
+
+**"version"**: "2.0": Specifies that this is for version 2.0 of the Azure Functions runtime
+
+**"logging"**: Configures logging behavior, particularly for Application Insights
+
+**"samplingSettings"**: Enables sampling for telemetry data to reduce the amount of telemetry data sent to Application Insights
+
+**"isEnabled"**: true: Enables sampling (reduces the amount of data sent to Application Insights, making telemetry more efficient)
+
+**"excludedTypes"**: "Request": Excludes Request logs from being sampled
+
+**"enableLiveMetricsFilters"**: true: Enables live metrics filters for Application Insights, allowing live monitoring of application performance and errors
 
 
 ### 13.5. 
