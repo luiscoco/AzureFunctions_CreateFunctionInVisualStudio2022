@@ -222,10 +222,29 @@ This file **configures logging and telemetry** for Azure Functions, particularly
 **"enableLiveMetricsFilters"**: true: Enables live metrics filters for Application Insights, allowing live monitoring of application performance and errors
 
 
-### 13.5. 
+### 13.5. local.settings.json
 
+This file is used for **local development settings**, such as **connection strings** and **runtime-specific configurations**
 
+When running locally, Azure Functions will read this file for settings
 
+```json
+{
+  "IsEncrypted": false,
+  "Values": {
+      "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+      "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated"
+  }
+}
+```
+
+This file provides **local configuration settings**, such as **storage connection strings** and function **runtime configuration**. It’s primarily used during local development and testing
+
+**"IsEncrypted"**: false: Specifies whether this file is encrypted (for local development, this is typically false)
+
+**"AzureWebJobsStorage"**: "UseDevelopmentStorage=true": This sets the AzureWebJobsStorage connection string to use local development storage (i.e., Azure Storage Emulator or Azurite)
+
+**"FUNCTIONS_WORKER_RUNTIME"**: "dotnet-isolated": Specifies the runtime environment for the Azure Functions. In this case, it uses .NET Isolated Worker, which decouples the Azure Functions runtime from the .NET process, allowing more flexibility in .NET versions and dependency management
 
 ## 14. Run your application and hit the Azure Function EndPoint
 
