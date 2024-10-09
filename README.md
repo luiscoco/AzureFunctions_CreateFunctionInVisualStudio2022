@@ -256,6 +256,8 @@ Click on the Azure Function Endpoint and see the result
 
 ![image](https://github.com/user-attachments/assets/fc1b5999-97c0-4796-adc4-41dc7283e081)
 
+![image](https://github.com/user-attachments/assets/0035000f-3549-4681-bd15-84399a65a036)
+
 ## 15. How to deploy the Azure Function from Visual Studio 2022
 
 Right click on the Azure Function project name and the select the menu option **Publish...**
@@ -317,6 +319,6 @@ After creating the publishing profile press the Publish button
 
 
 
-![image](https://github.com/user-attachments/assets/0035000f-3549-4681-bd15-84399a65a036)
+
 
 
