@@ -42,7 +42,7 @@ https://visualstudio.microsoft.com/vs/preview/
 
 ![image](https://github.com/user-attachments/assets/90209b7d-cca9-47a6-a6fe-2a0483e0dbc7)
 
-## 11. See the Azure Function source code:
+## 11. See the Azure Function source code
 
 ```csharp
 using Microsoft.AspNetCore.Http;
@@ -71,33 +71,48 @@ namespace FunctionApp1
 }
 ```
 
-This code defines an Azure Function written in C# using the .NET Core framework, specifically for HTTP-triggered functions. Here's a brief breakdown of its components:
+This code defines an Azure Function written in C# using the .NET 9 framework, specifically for **HTTP-triggered** functions
 
-Namespaces:
+**Microsoft.AspNetCore.Http, Microsoft.AspNetCore.Mvc**: These namespaces provide classes for handling HTTP requests and returning responses.
 
-Microsoft.AspNetCore.Http, Microsoft.AspNetCore.Mvc: These namespaces provide classes for handling HTTP requests and returning responses.
-Microsoft.Azure.Functions.Worker: Contains classes related to Azure Functions, including triggers.
-Microsoft.Extensions.Logging: Provides logging capabilities to log information during function execution.
-Class Definition (Function1):
+**Microsoft.Azure.Functions.Worker**: Contains classes related to Azure Functions, including triggers.
 
-This class represents the Azure Function.
-It has a constructor that accepts a logger (ILogger<Function1>) to log messages during the function's execution.
-Function Constructor:
+**Microsoft.Extensions.Logging**: Provides logging capabilities to log information during function execution.
 
-The constructor initializes the _logger field with an instance of a logger, enabling the function to log messages.
-Run Method:
+**Class Definition (Function1)**: This class represents the Azure Function. It has a constructor that accepts a logger (ILogger<Function1>) to log messages during the function's execution
 
-The [Function("Function1")] attribute defines this method as an Azure Function named "Function1".
-The method Run is the function's entry point. It accepts an HttpRequest object (triggered by either a GET or POST HTTP request), and it's decorated with the [HttpTrigger] attribute.
-The AuthorizationLevel.Function specifies that the function requires a valid function key for access.
-Logging and Response:
+**Function Constructor**: The constructor initializes the _logger field with an instance of a logger, enabling the function to log messages
 
-Inside the Run method, the function logs a message using _logger.LogInformation.
-The method returns an OkObjectResult with a message "Welcome to Azure Functions!", which corresponds to an HTTP 200 OK response.
-Summary:
-This code defines an HTTP-triggered Azure Function that logs a message when it processes a request and responds with a welcome message to the client.
+The **[Function("Function1")]** attribute defines this method as an Azure Function named "Function1"
+
+The method **Run** is the function's entry point. It accepts an HttpRequest object (triggered by either a **GET or POST HTTP request**), and it's decorated with the **[HttpTrigger]** attribute
+
+The AuthorizationLevel.Function specifies that the function requires a valid function key for access
+
+Logging and Response: Inside the Run method, the function logs a message using _logger.LogInformation
+
+The method returns an OkObjectResult with a message "Welcome to Azure Functions!", which corresponds to an HTTP 200 OK response
 
 ## 12. Configure and register the Services in the middleware (Program.cs)
+
+```csharp
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
+var host = new HostBuilder()
+    .ConfigureFunctionsWebApplication()
+    .ConfigureServices(services =>
+    {
+        services.AddApplicationInsightsTelemetryWorkerService();
+        services.ConfigureFunctionsApplicationInsights();
+    })
+    .Build();
+
+host.Run();
+```
+
+
 
 ## 13. 
 
