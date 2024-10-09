@@ -136,7 +136,66 @@ The **HostBuilder** is used to configure and build the **host** for the Azure Fu
 
 **host.Run()**: This method **runs the Azure Functions application**, making it ready to respond to function triggers (like HTTP requests, timer triggers, etc.).
 
-## 13. 
+## 13. Configuration files
+
+### 13.1. launchSettings.json
+
+This file is typically used in .NET projects **for configuring how the project is launched** when you run it locally (such as in Visual Studio or with .NET CLI)
+
+```json
+{
+  "profiles": {
+    "FunctionApp1": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7276",
+      "launchBrowser": false
+    }
+  }
+}
+```
+
+This file helps set up how the Azure Function is run locally, defining the port and behavior (like whether to open the browser)
+
+**"commandName"**: "Project": Specifies that this project should be run directly when launched (in the case of Azure Functions, the function app is hosted)
+
+**"commandLineArgs"**: "--port 7276": This argument tells the local development environment to start the function app on port 7276
+
+**"launchBrowser"**: false: Indicates that the browser should not be launched when the project runs (since Azure Functions might not need a browser to be launched when testing locally)
+
+### 13.3. serviceDependencies.json
+
+This file defines external service dependencies (like Azure services) that your project relies on. 
+
+```json
+{
+  "dependencies": {
+    "appInsights1": {
+      "type": "appInsights"
+    },
+    "storage1": {
+      "type": "storage",
+      "connectionId": "AzureWebJobsStorage"
+    }
+  }
+}
+```
+
+In this case, it defines two services:
+
+**"appInsights1"**: Indicates that the project uses Application Insights for logging and telemetry. The type is "appInsights"
+
+**"storage1"**: Indicates that Azure Storage is required for the function. The connection to Azure Storage is through the AzureWebJobsStorage connection string, which is typically defined in local.settings.json or an environment variable
+
+This file defines external services (like Azure Application Insights and Azure Storage) that your Azure Function depends on, helping manage and configure those dependencies
+
+### 13.4 
+
+
+
+### 13.5. 
+
+
+
 
 ## 14. Run your application and hit the Azure Function EndPoint
 
