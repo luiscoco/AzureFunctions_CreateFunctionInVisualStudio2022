@@ -258,6 +258,8 @@ Click on the Azure Function Endpoint and see the result
 
 ## 15. How to deploy the Azure Function from Visual Studio 2022
 
+**IMPORTANT NOTE**:
+
 Right click on the Azure Function project name and the select the menu option **Publish...**
 
 ![image](https://github.com/user-attachments/assets/4961ebe3-21eb-4b7c-b61b-fcacca878366)
@@ -274,12 +276,23 @@ Create a new Azure Function instance in case there was not created previously in
 
 ![image](https://github.com/user-attachments/assets/1258c45b-e512-4db9-b16d-ad48dc778dbb)
 
+![image](https://github.com/user-attachments/assets/1c0de0ea-119b-4ee2-8a99-f80effd26214)
 
+After creating the publishing profile press the Publish button
 
+![image](https://github.com/user-attachments/assets/40e6918a-fd6a-4399-a4d9-e554862c854c)
+
+![image](https://github.com/user-attachments/assets/eeb90aa6-2e38-474f-adef-ac65b8dcff2e)
 
 ## 16. (OPTIONAL) You can create an Azure Function in Azure Portal and the deploy your Azure Function from Visual Studio 2022
 
+![image](https://github.com/user-attachments/assets/833de611-00a4-4cc3-977f-417fd6df9168)
 
+After creating the publishing profile press the Publish button
+
+![image](https://github.com/user-attachments/assets/40e6918a-fd6a-4399-a4d9-e554862c854c)
+
+![image](https://github.com/user-attachments/assets/dc6420f7-cfbf-4749-97ba-5bcc354eff17)
 
 ## 17. (OPTIONAL) You can create a ZIP from your Azure Function and then deploy from Azure CLI
 
