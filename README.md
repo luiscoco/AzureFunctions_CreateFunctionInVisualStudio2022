@@ -248,5 +248,27 @@ This file provides **local configuration settings**, such as **storage connectio
 
 ## 14. Run your application and hit the Azure Function EndPoint
 
+Press the running button in Visual Studio 2022 IDE
+
+![image](https://github.com/user-attachments/assets/9d306e8a-8a17-4d99-a249-0e56a5c1ae27)
+
+Click on the Azure Function Endpoint and see the result
+
+![image](https://github.com/user-attachments/assets/fc1b5999-97c0-4796-adc4-41dc7283e081)
+
+## 15. How to deploy the Azure Function from Visual Studio 2022
+
+
+## 16. (OPTIONAL) You can create an Azure Function in Azure Portal and the deploy your Azure Function from Visual Studio 2022
+
+
+
+## 17. (OPTIONAL) You can create a ZIP from your Azure Function and then deploy from Azure CLI
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/0035000f-3549-4681-bd15-84399a65a036)
 
 
